@@ -1,7 +1,7 @@
 
-from .. import models,schemas, utils
+from app import models,schemas, utils
 from fastapi import Body, Depends, FastAPI, Response,status, HTTPException, APIRouter
-from ..database import engine , get_db
+from app.database import engine , get_db
 from sqlalchemy.orm import session 
 
 

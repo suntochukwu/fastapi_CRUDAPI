@@ -1,8 +1,8 @@
 
 
-from .. import models,schemas,oath2
+from app import models,schemas,oath2
 from fastapi import Body, Depends, FastAPI, Response,status, HTTPException, APIRouter
-from ..database import engine , get_db
+from app.database import engine , get_db
 from sqlalchemy.orm import session 
 from typing import List, Optional
 from sqlalchemy import delete, join, func
