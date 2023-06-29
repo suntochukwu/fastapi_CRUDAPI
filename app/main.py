@@ -1,10 +1,11 @@
 
 from fastapi import FastAPI
-from . import models, schemas, utils
-from .database import engine 
-from .routers import post, user, auth, vote
+from app import models, schemas, utils
+from app.database import engine 
+from app.routers import post, user, auth, vote
 from pydantic import BaseSettings
 from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI() 
 
 #Done via alembic now so commented out line below
